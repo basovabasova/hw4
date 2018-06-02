@@ -4,9 +4,10 @@ $appid = 'f2b6f0a80a0e8389cba540f68fef18a8';
 $city_list = file_get_contents("city.list.json");
 $cityArr = json_decode($city_list, true);
 $city = [];
-    foreach ($cityArr as $cities) {
-        $city[] = $cities['name'];      
-    }
+
+foreach ($cityArr as $cities) {
+    $city[] = $cities['name'];      
+}
 
 if (isset($_GET['cityname'])) {
     $cityname = mb_convert_case($_GET['cityname'], MB_CASE_TITLE);
