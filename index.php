@@ -26,11 +26,11 @@ if (isset($_GET['cityname'])) {
         $needPressure = round($pressure * 0.75);
         $temp1 = $temp - 273;
         $needTemp = round($temp1) . ' C&deg';
-            if ($needTemp > 0) {
-                $needTemp = str_pad($needTemp, strlen($needTemp) + 1, "+", STR_PAD_LEFT);
-            } elseif ($needTemp < 0) {
-                $needTemp = str_pad($needTemp, strlen($needTemp) + 1, "-", STR_PAD_LEFT);
-            }
+        if ($needTemp > 0) {
+            $needTemp = str_pad($needTemp, strlen($needTemp) + 1, "+", STR_PAD_LEFT);
+        } elseif ($needTemp < 0) {
+            $needTemp = str_pad($needTemp, strlen($needTemp) + 1, "-", STR_PAD_LEFT);
+        }
 
         $cityId = $weatherArr['id'];
    
