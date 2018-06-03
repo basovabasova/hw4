@@ -1,0 +1,1 @@
+http://api.openweathermap.org/data/2.5/weather?q=Moscow,ru&appid=f2b6f0a80a0e8389cba540f68fef18a8

@@ -1,0 +1,2 @@
+{"coord":{"lon":37.62,"lat":55.75},"weather":[{"id":621,"main":"Snow","description":"shower snow","icon":"13d"}],"base":"stations","main":{"temp":271.15,"pressure":1020,"humidity":100,"temp_min":271.15,"temp_max":271.15},"visibility":3000,"wind":{"speed":3,"deg":300},"clouds":{"all":90},"dt":1515663000,"sys":{"type":1,"id":7325,"message":0.0019,"country":"RU","sunrise":1515649985,"sunset":1515676946},"id":524901,"name":"Moscow","cod":200}
+
