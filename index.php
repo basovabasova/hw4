@@ -7,7 +7,7 @@ $cityArr = json_decode($city_list, true) or exit('Ошибка декодиро�
 $city = [];
 
 foreach ($cityArr as $cities) {
-    (!empty($cities['name'])) ? $city[] = $cities['name'] : 'Не удалось получить название города';
+    (!empty($cities['name'])) ? $city[] = $cities['name'] : echo 'Не удалось получить название города';
 }
 
 if (isset($_GET['cityname'])) {
@@ -49,7 +49,7 @@ if (isset($_GET['cityname'])) {
     <button type="confirm">Поcмотреть погоду</button>
     <?php
         foreach ($cityArr as $cities) {
-            (!empty($cities['id'])) ? $id = $cities['id'] : 'Не удалось получить id города';
+            (!empty($cities['id'])) ? $id = $cities['id'] : echo 'Не удалось получить id города';
             
             if ($id === $cityId) {
                 echo "<pre>";
